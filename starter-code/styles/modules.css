@@ -9,7 +9,11 @@
   padding: 0 0 .2em 1em;
 }
 
+
 .icon-menu {
+  font-size:2em;
+  text-align: right;
+  padding-right:.5em;
   /* TODO: Add styles for the icon-menu class (whether it be the
       hamburger font icon or an image of your choosing). It should be
       bigger, and off to the right. */
@@ -58,6 +62,8 @@
   text-decoration: none;
 }
 
+
+
 /* TODO: Now add styles for how things should look on a larger screen,
    (hint: min is in!):
 @media screen...
@@ -66,3 +72,16 @@
          - The main-nav should be all on one row, with padding spaced better
            for a larger screen.
 */
+@media only screen and (min-width:640px){
+  .icon-menu{
+    display:none;
+  }
+  .main-nav ul {
+    display:block;
+  }
+  .main-nav li {
+    display:inline-block;
+    border: none;
+    padding-right: 10%;
+  }
+}
